@@ -1,17 +1,329 @@
+
 <!DOCTYPE html>
 
-<html>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+<html lang="en">
+    <!-- Goddess Vartika's Portfolio -->
+<style type="text/css">
+    .topmarquee:link{
+        color: rgb(214, 19, 68);
+        }
+        
+        .topmarquee:visited{
+        color: rgb(162, 6, 209);
+        }
+        
+        .topmarquee:hover{
+        color: rgb(251, 76, 106);
+        }
+        
+
+        .scroll-left {
+         height: 50px;	
+         overflow: hidden;
+         position: relative;
+         background: #000;
+         color: tan;
+         border: None;
+        }
+        
+        .scroll-left p {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         line-height: 50px;
+         text-align: left;
+        
+        
+          /* Starting position */
+         -moz-transform:translateX(100%);
+         -webkit-transform:translateX(100%);	
+         transform:translateX(100%);
+         
+        
+         /* Apply animation to this element */	
+         -moz-animation: scroll-left 30s linear infinite;
+         -webkit-animation: scroll-left 30s linear infinite;
+         animation: scroll-left 60s linear infinite;
+        }
+        
+        
+        /* The main text animation code*/
+        @-moz-keyframes scroll-left {
+         0%   { -moz-transform: translateX(100%); }
+         100% { -moz-transform: translateX(-100%); }
+        }
+        @-webkit-keyframes scroll-left {
+         0%   { -webkit-transform: translateX(100%); }
+         100% { -webkit-transform: translateX(-100%); }
+        }
+        @keyframes scroll-left {
+         0%   { 
+         -moz-transform: translateX(100%);
+         -webkit-transform: translateX(100%);
+         transform: translateX(100%); 		
+         }
+         100% { 
+         -moz-transform: translateX(-100%);
+         -webkit-transform: translateX(-100%);
+         transform: translateX(-100%); 
+         }
+        }
+
+</style>
 
 <head>
-<title> Goddess Vartika - Siddha Mahayoga </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Goddess Vartika - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Cinzel:wght@500&family=Gentium+Basic&family=Merriweather:wght@700&family=Raleway&family=Texturina:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Others -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/style_vj.css">
+    <link rel="stylesheet" type="text/css" href="../css/normal_vj.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.ritekrounak.ml/favicon.png">
 </head>
 
 <body>
-<h1 style="font-family: 'Teko', sans-serif;">Goddess Vartika</h1>
-</body>
+
+    <!--
+    Home
+    About Us
+    Lineage
+    Resources
+    Disciples' Corner
+    Gallery
+    Contact Us
+    Social Media
+    FAQs
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navs">
+        <!-- <a class="navbar-brand" href="index.html">Goddess Vartika</a> -->
+        <a class="navbar-brand" href="index.html"><img src="../assets/imgs/logo.svg" width="200px" height="200px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#desc">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Lineage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Resource</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Disciple's Corner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <section class="desc" id="desc">
+        <div class="content">
+            <h1 data-aos="fade-right">Goddess Vartika</h1>
+            <h4>Shaktipat Guru</h4>
+            <a href="#contact"><button class="btn1">&#9776; Contact Us</button></a>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-lg-6 one">
+                    <!-- <img src="https://authmachine.com/static/img/home-banner.24c36218b2fe.svg" alt="Computer Picture" data-aos="fade-up-left"> -->
+                    <img src="../assets/imgs/face.jpg"  alt="My Picture" data-aos="fade-up-left">
+                </div>
+                <div class="col-lg-6 two">
+                    <h2 data-aos="fade-down">About Us</h2>
+                    <p data-aos="fade-right">
+                        Siddha Mahayoga is a path of inner transformational journey which begins when a Siddha Guru meets a deserving disciple. As an authorised Siddha Guru, the spiritual head of the Siddha Maha Yoga path, Goddess Vartika, initiates deserving disciples onto the grand Yoga path - Siddha Maha Yoga.
+                        Every religious and spiritual journey gradually leads a seeker towards Kundalini Awakening. At this point the actual journey begins, prior to this everything done so far is a mere preparation of the mind and body.
+                    </p>
+                    <p data-aos="fade-right">
+                        The safest and easiest method for attaining this state of awakened Kundalini is through Kundalini Shaktipat, this is achieved through the blessings and Sankalp of a Siddha Guru. Once the energy is awakened within a deserving disciple, (s)he is able to experience and live in the awareness of the Self.
+                    </p>
+                    <p data-aos="fade-right">
+                        The Guru's grace grace and incessant effort on the part of the disciple are essential components for disciples to realise the divinity within themselves.
+                        Once a disciple is initiated onto this path, constant and continuous guidance and support is extended all along the journey.
+                    </p>
+                    <p data-aos="fade-right">
+                        Shaktipat Deeksha can be obtained online from Guruji Goddess Vartika from any country of the world.                        
+                        Formal Shaktipat initiation is available to all seekers without any restriction on the grounds of religion, age, gender, caste, race, creed. The prerequisite being an intense desire to attain oneness, Nirvana, spiritual awareness. A few health conditions have to be screened before the initiation can be given.
+                    </p>
+                    <button class="btn" data-aos="fade-down">Download Form</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container three">
+            <h2 data-aos="flip-left">Lineage</h2>
+        </div>
+        <div class="container four">
+            <div class="row">
+                <div class="col-md-4 five">
+                    <img src="https://www.sahajananda-ashram.com/wp-content/uploads/2020/05/site/assets/gurus/Sri_Swami_Gangadhar_Tirtha.jpg.webp" data-aos="zoom-in-down">
+                    <h5 data-aos="zoom-in">Swami Gangadhar Tirth</h5>
+                    <p data-aos="fade-right">He was born in north India and is believed to have revived the Shaktipat system towards the end of nineteenth century. There is hardly any data available on him, he initiated only one disciple named Kali Kishore, who later came to be known as Swami Narayandev Tirth.</p>
+                </div>
+                <div class="col-md-4 five center">
+                    <img src="https://www.sahajananda-ashram.com/wp-content/uploads/2020/05/site/assets/gurus/Sri_Swami_Narayandev_Tirtha.jpg.webp" data-aos="zoom-in-down">
+                    <h5 data-aos="zoom-in">Swami Narayan Dev Tirth</h5>
+                    <p data-aos="fade-up">Kali Kishore was born in the East Bengal of India in the year 1870. He was a genuine seeker of spiritual upliftment since early days of his life. He got married at a very tender age. At this age itself he possessed many spiritual qualities like; detachment from worldly longings and control over his emotions. He traveled extensively and sought many teachers. Finally, he got initiated by Swami Gangadhar Tirth in 1889. When Swamiji came to know that he had many responsibilities, he sent Kali Kishore back home and asked him to restart sadhan once he was free from his worldly responsibilities. After nineteen and a half years, as promised by his Guru, Kali Kishore started experiencing the Divine energy within himself.  Later, he took sanyas deeksha and was named Swami Narayandev Tirth.  He wanted this method of yoga to be accessible to many so he  initiated many disciples during his lifetime.</p>
+                </div>
+                <div class="col-md-4 five">
+                    <img src="https://www.sahajananda-ashram.com/wp-content/uploads/2020/05/site/assets/gurus/Sri_Yogananda.jpg.webp" data-aos="zoom-in-down">
+                    <h5 data-aos="zoom-in">Sri Yoganand Maharaj</h5>
+                    <p data-aos="fade-left">He was born in Junagar, Gujarat in India, at the beginning of twentieth century.  Dispassion towards  worldly matters eventually made him renounce home in search of a true master. He acquired knowledge about yoga through various saints but was not satisfied. Under the mentorship of Krishnanandaji, he heard about Swami Narayan Tirth Maharaj. He met Swamiji, was initiated and became known as Sri Yoganandaji. Later he was made a Shaktipat guru by Swami Narayandev Tirth.</p>
+                </div>
+                <div class="container four">
+                    <div class="row">
+                        <div class="col-md-4 five">
+                            <img src="https://www.sahajananda-ashram.com/wp-content/uploads/2020/05/site/assets/gurus/Sri_Vishnu_Tirtha.jpg.webp" data-aos="zoom-in-down">
+                            <h5 data-aos="zoom-in">Swami Vishnu Tirth</h5>
+                            <p data-aos="fade-right">
+                                Born on 15 October 1888 in Jhajjar, Haryana, India. At the Swarg Ashram in Rishikesh Munilal Swami received Shaktipat initiation from Yogananda Maharaj in 1933. In 1939 he received sanyas deeksha by Swami Shankar Purushottam Tirth in Benaras, who initiated him at the Mohan Ashram, Haridwar near the bank of the Ganges. He was then named Swami Vishnu Tirth. Swami Yogananda suggested him to settle in Dewas where he laid the foundation for the Narayan Kuti Sanyas Ashram. Vishnu Tirth Ji initiated many spiritual aspirants into the system of Shaktipat (descent of energy) and wrote a number of books. He left his body in 1969.
+                            </p>
+                        </div>
+                        <div class="col-md-4 five center">
+                            <img src="https://www.sahajananda-ashram.com/wp-content/uploads/2020/05/site/assets/gurus/Sri_Swami_Shivom_Tirtha.jpg" data-aos="zoom-in-down">
+                            <h5 data-aos="zoom-in">Swami Shivom Tirth</h5>
+                            <p data-aos="fade-up">Om Prakash was born in a small village in Gujarat, Punjab (present-day Pakistan). He completed his undergraduate degree at Lahore and lived a householder’s life for many years. at the time of partition he with his family relocated to India. He met Swami Vishnu Tirth and was inspired to begin his spiritual journey. In the beginning he wsa taking care of the Narayan Kuti Sanyas Ashram. Gradually with his devotion and service to his Guru he became the favored disciple who would inherit the lineage. In 1963, he received formal sannyas diksha from Swami Narayan Tirth of Kashi and was renamed Swami Shivom Tirth. After that he took care of the Yog Shri Peeth Ashram in Rishikesh and Narayan Kuti Ashram in Dewas, Madhya Pradesh. In his later years Swami Shivom Tirth gave up his public life, left the ashram and started living in an isolated place near Indore, with two celibate disciples, writing many books. He gave up his earthly body on 6 April 2008 at Coimbtore: his body being committed to the Ganges at Rishikesh.</p>
+                        </div>
+                        <div class="col-md-4 five">
+                            <img src="../assets/imgs/blob.jpg" data-aos="zoom-in-down" width="300px">
+                            <h5 data-aos="zoom-in">Swami Sahajananda Tirth</h5>
+                            <p data-aos="fade-left">Born in a traditional Indian family, Sri Swami Sahajananda Tirth was devotional from his young age. During his spiritual journey, he met many spiritual teachers such as Sri Aurobindo, Sri Ramana Maharshi of Thiruvannamalai, and Swami Bhaskaranand Tirth. Upon meeting His Guru Swami Shivom Tirth, he was initiated into Sanyas tradition. He later introduced Shaktipat lineage to the south Indian state of Andhra Pradesh. To bring awareness. He published many valuable books and initiated disciples in Siddha Maha Yoga tradition.</p>
+                        </div>
+                        <div class="container four">
+                            <div class="row">
+                                <div class="col-md-4 five">
+                                    <img src="https://www.sahajananda-ashram.com/wp-content/uploads/2020/05/site/assets/gurus/Guru_T_Sreenivasulu.jpg.webp" data-aos="zoom-in-down">
+                                    <h5 data-aos="zoom-in">Guruji T Sreenivasulu</h5>
+                                    <p data-aos="fade-right">At the age of fifteen, he was attracted to the mighty Himalayan ranges and the source of the river Ganga, due to his passion for adventure in rock climbing and mountaineering. His long journey of more than two thousand kilometers led to a different journey altogether, after he encountered his Himalayan master on board the same train as a young boy. He got initiated into Siddha Mahayoga and later he became a Grandmaster in the lineage. He authored multiple books and is still doing a lot of work in the area of spreading the lineage far and wide.</p>
+                                </div>
+                                <div class="col-md-4 five">
+                                    <img src="../assets/imgs/blobby.jpg" data-aos="zoom-in-down" width="300px">
+                                    <h5 data-aos="zoom-in">Goddess Vartika</h5>
+                                    <p data-aos="fade-right">Goddess Vartika was born in Prayagraj, UP in a nuclear family to an advocate father and a housewife mother. Academically she holds a M Phil degree in psychology and is a certified hypnotherapist. At the age of 12 she was already deeply inclined towards the occult and the mystic. By this time she had in fact started reading a lot of spiritual texts. Despite being busy with social and household responsibilities, she was constantly seeking spiritual upliftment. This eventually led her to her guru T. Sreenivasulu Ji who initiated her onto Siddha Mahayoga and then bestowed on her the deekshadhikara to initiate others.</p>
+                                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 data-aos="fade-up">Resources</h2>
+        <div class="container">
+            <ul class="list-group">
+                <a href="https://www.sahajananda-ashram.com/download/" target="_blank"><li class="list-group-item" data-aos="flip-right">PDF Books<img src="https://img.icons8.com/color/48/000000/python.png" /></li></a>
+                <!-- <li class="list-group-item" data-aos="flip-right">C++ <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" /></li>
+                <li class="list-group-item" data-aos="flip-right">C<img src="https://img.icons8.com/color/48/000000/c-programming.png" /></li> -->
+                <!-- <li class="list-group-item" data-aos="flip-right">GIT<img src="https://img.icons8.com/color/48/000000/git.png" /></li> -->
+                <!-- <li class="list-group-item last" data-aos="flip-right">MySQL<img src="https://img.icons8.com/ios-filled/48/000000/mysql-logo.png" /></li> -->
+            </ul>
+        </div>
+        <br>
+        <br>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 data-aos="zoom-in">Contact Us</h2>
+            <!-- <h4 data-aos="zoom-in">GET IN TOUCH</h4> -->
+            <form action="mailto:vartikashukla2000@gmail.com" method="post">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" data-aos="fade-right">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" data-aos="fade-right">
+                <textarea name="concern" id="conceren" rows="6" placeholder="Enter Your Concern" data-aos="fade-right"></textarea>
+                <button class="btn" type="submit" data-aos="zoom-in-up">Send Mail</button>
+            </form>
+        </div>
+    </section>
+    <footer class="foot" id="foot">
+        <a href="#desc" data-aos="fade-down"><i class="fa fa-arrow-circle-up" aria-hidden="true" id="one"
+                style="font-size: 40px;padding-top: 10px; color: white;"></i></a>
+        <h2 data-aos="flip-left"><a data-aos="fade-up" href="index.html" style="text-decoration: none; color: tan;">Goddess Vartika</a></h2>
+        <div class="container social" data-aos="zoom-in-down">
+            <a href="https://twitter.com/sreeshaktipat" target="_blank"><i class="fa fa-twitter" aria-hidden="true" id="one" style="color: #1DA1F2;"></i></a>
+            <a href="https://chat.whatsapp.com/ESsgRRk9eoIC4MEmBPq9Em" target='_blank'><i class= "fa fa-whatsapp" style="color: #25D366;"></i></a>
+            <a href="https://t.me/shaktipat_guru" target="_blank"><i class="fa fa-telegram" aria-hidden="true" id="one"  style="color: #0088cc;"></i></a>
+            <!-- <a href="https://www.instagram.com/invites/contact/?i=17mguk5dpzmq2&utm_content=mdwaltc" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="132.004" height="132" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="b"><stop offset="0" stop-color="#3771c8"/><stop stop-color="#3771c8" offset=".128"/><stop offset="1" stop-color="#60f" stop-opacity="0"/></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fd5"/><stop offset=".1" stop-color="#fd5"/><stop offset=".5" stop-color="#ff543e"/><stop offset="1" stop-color="#c837ab"/></linearGradient><radialGradient id="c" cx="158.429" cy="578.088" r="65" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.402 454.004)" fx="158.429" fy="578.088"/><radialGradient id="d" cx="147.694" cy="473.455" r="65" xlink:href="#b" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.348 -458.493)" fx="147.694" fy="473.455"/></defs><path fill="url(#c)" d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z" transform="translate(1.004 1)"/><path fill="url(#d)" d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z" transform="translate(1.004 1)"/><path fill="#fff" d="M66.004 18c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C18.06 51.327 18 52.964 18 66s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97c-3.18 0-5.76 2.577-5.76 5.758 0 3.18 2.58 5.76 5.76 5.76 3.18 0 5.76-2.58 5.76-5.76 0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C79.617 90.645 90.65 79.613 90.65 66S79.616 41.35 66.003 41.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z"/></svg></a> -->
+            <a href="https://www.instagram.com/invites/contact/?i=17mguk5dpzmq2&utm_content=mdwaltc" target="_blank"><i class="fa fa-instagram" aria-hidden="true" id="one" style="color: #DB297A;"></i></a>
+            <a href="https://www.facebook.com/sreeshaktipatashram" target="_blank"><i class="fa fa-facebook" aria-hidden="true" id="one" style="color: #4267B2;"></i></a>
+            <a href="https://www.reddit.com/user/goddessvartika" target='_blank'><i class= "fa fa-reddit" style="color: #FF5700"></i></a>
+        </div>
+        <div class="container others">
+            <div class="row">
+                <div class="col-sm-3" data-aos="fade-up">
+                    <h5>Goddess Vartika</h5>
+                    <h6>Mahayoga Mahaguru</h6>
+                </div>
+                <div class="col-sm-3" data-aos="fade-up">
+                    <h5>Email</h5>
+                    <h6>vartikashukla2000@gmail.com</h6>
+                </div>
+                <div class="col-sm-3" data-aos="fade-up">
+                    <h5>Address</h5>
+                    <h6>Gurgaon, Haryana, India</h6>
+                    <h6>PIN 122001</h6>
+                </div>
+            </div>
+            <p> &COPY; Goddess Vartika @2021. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <div class="scroll-left"><p><b><FONT face = "Trebuchet MS" size = 5px>Thanks for viewing <a class = 'topmarquee' href = '#' style = 'text-decoration: none'>my profile</a> </FONT> </b> </p> </div>
+
+    </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 
 </html>
